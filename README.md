@@ -14,6 +14,8 @@
 
 **当前论文：** *DenoDet: Attention as Deformable Multi-Subspace Feature Denoising for Target Detection in SAR Images*
 
+[阅读原论文 PDF](originals/2024/DenoDet.pdf) · 原论文统一存放于 `originals/`，按年份归档。
+
 阅读状态：待读 / 略读 / 阅读中 / 已精读 / 暂停。时间统一使用 `YYYY-MM-DD`（北京时间）；已知阅读起止日期时记录区间，仅确认笔记完成日期时注明“笔记完成”。已精读不代表完成代码核查或实验复现。
 
 ## 阅读主线

@@ -13,7 +13,7 @@
 | 论文 | DenoDet: Attention as Deformable Multi-Subspace Feature Denoising for Target Detection in SAR Images |
 | 作者 | Yimian Dai、Minrui Zou、Yuxuan Li、Xiang Li、Kang Ni、Jian Yang |
 | 阅读版本 | 用户提供的 18 页 PDF；首页标注 arXiv:2406.02833v2，2024-08-10 |
-| 原文 / 代码 | [arXiv](https://arxiv.org/abs/2406.02833v2) · [GrokSAR](https://github.com/GrokCV/GrokSAR) |
+| 原文 / 代码 | [仓库 PDF](../../originals/2024/DenoDet.pdf) · [arXiv](https://arxiv.org/abs/2406.02833v2) · [GrokSAR](https://github.com/GrokCV/GrokSAR) |
 | 本次整理 | 2026-10-29；重点核对 §III，PDF 第 5—7 页 |
 | 进度 | 方法正文与关键公式已对照；官方代码尚未核查 |
 
