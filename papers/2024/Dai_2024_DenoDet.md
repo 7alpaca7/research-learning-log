@@ -56,7 +56,7 @@ SAR 去噪面临“抑制干扰可能同时损失细节”的矛盾。作者没�
 传统软阈值为：
 
 $$
-\operatorname{soft}(x,\theta)=\operatorname{sign}(x)\max(0,|x|-\theta).
+\mathrm{soft}(x,\theta)=\mathrm{sign}(x)\max(0,|x|-\theta).
 $$
 
 乘法注意力为 $y=a(x)x$。当 $0\le a(x)\le1$ 时，定义：
@@ -69,8 +69,8 @@ $$
 
 $$
 \begin{aligned}
-\operatorname{soft}(x,\theta(x))
-&=\operatorname{sign}(x)\max(0,a(x)|x|)\\
+\mathrm{soft}(x,\theta(x))
+&=\mathrm{sign}(x)\max(0,a(x)|x|)\\
 &=a(x)x.
 \end{aligned}
 $$
@@ -125,9 +125,9 @@ $$
 \begin{aligned}
 M&\in\mathbb R^{C\times H\times W},\\
 m&=\mathcal W(M)\in\mathbb R^{C\times H\times W},\\
-s&=\operatorname{vec}\big(\operatorname{Avg}_c(m)+\operatorname{Max}_c(m)\big)
+s&=\mathrm{vec}\big(\mathrm{Avg}_c(m)+\mathrm{Max}_c(m)\big)
 \in\mathbb R^N,\\
-a&=\sigma\big(D_2(\operatorname{ReLU}(D_1(s)))\big).
+a&=\sigma\big(D_2(\mathrm{ReLU}(D_1(s)))\big).
 \end{aligned}
 $$
 
@@ -138,7 +138,7 @@ $$
 $$
 \widetilde m=\mathcal R(m),\qquad
 \theta=(1-a)\odot|\widetilde m|,\qquad
-M'=\mathcal W^{-1}\!\left(\mathcal R^{-1}\!\left[\operatorname{soft}(\widetilde m,\theta)\right]\right).
+M'=\mathcal W^{-1}\!\left(\mathcal R^{-1}\!\left[\mathrm{soft}(\widetilde m,\theta)\right]\right).
 $$
 
 在等价条件满足时，也可理解为 $M'=\mathcal W^{-1}(a\odot m)$，其中广播与重排按相应维度进行。
